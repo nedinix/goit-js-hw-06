@@ -6,5 +6,5 @@ input.addEventListener("input", onInputChange);
 const defaultValue = nameLabel.textContent;
 
 function onInputChange(event) {
-	nameLabel.textContent = event.currentTarget.value || defaultValue;
+	nameLabel.textContent = event.currentTarget.value.trim() || defaultValue;
 }
