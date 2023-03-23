@@ -14,9 +14,8 @@ function onFormSubmit(event) {
 	} else {
 		const userInfo = { email, password };
 		console.log(userInfo);
+		event.currentTarget.reset();
 	}
-
-	event.currentTarget.reset();
 
 	// const formData = new FormData(event.currentTarget);
 	// formData.forEach((value, name) => {
