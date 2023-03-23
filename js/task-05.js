@@ -3,6 +3,8 @@ const nameLabel = document.querySelector("#name-output");
 
 input.addEventListener("input", onInputChange);
 
+const defaultValue = nameLabel.textContent;
+
 function onInputChange(event) {
-	nameLabel.textContent = event.currentTarget.value;
+	nameLabel.textContent = event.currentTarget.value || defaultValue;
 }
