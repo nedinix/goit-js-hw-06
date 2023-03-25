@@ -13,7 +13,7 @@ function onFormSubmit(event) {
 	if (!email || !password) {
 		alert("Всі поля повинні бути заповнені");
 	} else {
-		console.log(userInfo);
+		console.log(formData);
 		event.currentTarget.reset();
 	}
 }
